@@ -1,0 +1,400 @@
+<html>
+
+    <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <style>
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #111, #333);
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.card ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial';
+    background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+    color: white;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: radial-gradient(circle, #1dd1a1, #0f0f0f);
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+/* SECCIONES */
+.section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* TITULOS */
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1dd1a1;
+}
+
+/* SOBRE TEXTO */
+.section p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* CARDS */
+.card {
+    background: #1e1e1e;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+    text-align: left;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.5);
+    transition: 0.3s;
+    border: 1px solid #2a2a2a;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #1dd1a1;
+}
+
+/* LISTAS */
+.card ul {
+    padding-left: 18px;
+    color: #bbb;
+}
+
+/* PRECIOS */
+.card p:last-child {
+    font-weight: bold;
+    color: #1dd1a1;
+    font-size: 18px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-weight: bold;
+    color: #1dd1a1;
+    font-size: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #1dd1a1;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #111, #333);
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #111, #333);
+    color: white;
+    padding-top: 70px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: 20px;
+    align-items: center;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+.logo {
+    margin-right: 30px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #1ebe5d;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #1ebe5d;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .card {
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .section {
+        padding: 40px 10px;
+    }
+
+    .section p {
+        font-size: 14px;
+    }
+}
+
+</style>
+ 
+
+    </head>
+
+<a href="https://wa.me/50664896228" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+    <body>
+
+<div class="navbar">
+    <div class="logo">GIOEVENTOS</div>
+
+    <div class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#paquetes">Paquetes</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+</div>
+
+        <div class="hero" id="inicio">
+            <h1 style="text-align: center;">GIOEVENTOS</h1>
+
+            <p style="text-align: center;">MÚSICA, SONIDO PROFESIONAL, AMBIENTE Y MÁS.</p>
+        </div>
+
+
+        <div class="section" id="sobre">
+            <h2>SOBRE GIOEVENTOS</h2>
+            <p>En GIOEVENTOS, nos dedicamos a simplificar tu vida y hacer de tu fiesta un momento inolvidable. 
+                Entedemos que planificar el evento perfecto puede ser un desafío, por eso ofrecemos una variedad de servicios diseñados para llevar tu celebración a otro nivel.
+                 Desde la planificación y cordinación, hasta llevando el mejor entretenimiento. Nuestro equipo de expertos se compromete a cuidar cada detalle para que tu unica 
+                 preocupación sea disfrutar al máximo. Ya sea tu boda, cumpleaños, evento corporativo o cualquier otra ocasión especial. 
+                 En GIOEVENTOS estamos aquí para llevar tu visión a la realida y crear recuerdos que perduren para siempre.</p>
+
+        </div>
+
+        <div class="section" id="paquetes">
+            <h2>Paquetes</h2>
+
+            <div class="card">
+                <h2>BASICO</h2>
+                <p>Especial Para Los Que Quieren Algo Elegante Con Ese Toque Intimo Y Familiar</p>
+                    <ul>
+                        <li>Montaje Truss</li>
+                        <li>Dos Cabezas Moviles 7R Plus</li>
+                        <LI>Sonido YAMAHA a Dos Vias</LI>
+                        <li>Dos Cañones LED</li>
+                        <li>Maquina de Humo</li>
+                        <li>Microfono Inalambrico</li>
+                        <li>DJ-Maestro de Ceremonia-Animación</li>
+                    </ul>
+                <p>2,30mtrs X 1,80mtrs</p>
+                <p>170.000₡</p> 
+            </div>
+
+            <div class="card">
+                <h2>PREMIUM</h2>
+                <p>Especial Para Los Que Les Gusta Dar El Toque de Elegancia Y De Fiesta Dando Un Ambiente DE Colore Y Musica A La Vez</p>
+                    <ul>
+                        <li>Montaje Truss</li>
+                        <li>Dos Cabezas Moviles 7R Plus</li>
+                        <LI>Sonido YAMAHA a Dos Vias</LI>
+                        <li>Cuatro Cañones LED</li>
+                        <li>Dos Maquinas de Humo</li>
+                        <li>Microfono Inalambrico</li>
+                        <li>DJ-Maestro de Ceremonia-Animación</li>
+                        <li>Dos Truss Iluminados Intermitentes</li>
+                    </ul>
+                <p>2,50mtrs X 1,80mtrs</p>    
+                <p>250.000₡</p>    
+            </div>
+
+            <div class="card">
+                <h2>FULL SHOW</h2>
+                <p>PARA LOS QUE LES GUSTA LO EXCLUSIVO DANDO UN AMBIENTE CON LOS MEJORES ESCENARIOS DE FIESTA, LUCES Y SONIDO</p>
+                    <ul>
+                        <li>Montaje Truss</li>
+                        <li>Cuatro Cabezas Moviles 7R Plus</li>
+                        <LI>Sonido YAMAHA a Dos Vias</LI>
+                        <li>Cuatro Cañones LED</li>
+                        <li>Dos Maquinas de Humo</li>
+                        <li>Microfono Inalambrico</li>
+                        <li>DJ-Maestro de Ceremonia-Animación</li>
+                        <li>Dos Truss Iluminados Intermitentes</li>
+                        <li>Dos Sub marca YAMAHA</li>
+                    </ul> 
+                <p>3,00mtrs X 1,80mtrs</p>    
+                <p>370.000₡</p>      
+            </div>
+
+            <div class="card">
+                <h2>ECONOMICO</h2>
+                <p>Ideal Para Esos Eventos Pequeños E Intimos Entre Familiares Y Amigos</p>
+                    <ul>
+                        <li>Un Parlante YAMAHA</li>
+                        <li>Cuatro Cañones LED</li>
+                        <li>Booth DJ de Panel</li>
+                        <li>DJ y Animación</li>
+                    </ul>
+                <p>120.000₡</p>
+            </div>
+
+        </div>
+
+        <div class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p>Escríbenos para reservas.</p>
+    <p>📞 WhatsApp: 6489-6228</p>
+</div>
+        
+        
+        
+    </body>
+
+</html>
