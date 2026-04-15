@@ -338,6 +338,25 @@ section {
     }
 }
 
+.hero-img {
+    width: 300px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.6);
+}
+
+.hero-img {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-img:hover {
+    transform: scale(1.05);
+}
+
 </style>
  
 
@@ -365,10 +384,11 @@ section {
 </div>
 
         <div class="hero" id="inicio">
-            <h1 style="text-align: center;">GIOEVENTOS</h1>
+    <h1>GIOEVENTOS</h1>
+    <p>MÚSICA, SONIDO PROFESIONAL, AMBIENTE Y MÁS.</p>
 
-            <p style="text-align: center;">MÚSICA, SONIDO PROFESIONAL, AMBIENTE Y MÁS.</p>
-        </div>
+    <img src="dj.jpg" class="hero-img" alt="DJ mezclando">
+</div>
 
 
         <div class="section" id="sobre">
@@ -456,7 +476,11 @@ section {
 </div>
         
         
-        
+        <script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
     </body>
 
 </html>
