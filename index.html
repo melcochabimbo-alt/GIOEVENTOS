@@ -159,16 +159,32 @@ body {
     transform: scale(1.1);
 }
 
-.hero-img {
-    display: block;
-    margin: 20px 0 0 0;
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
 }
 
+
+.img-left,
+.img-right {
+    width: 435px;
+}
 
 
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
+    .hero {
+    flex-direction: column;
+}
+
+.img-left,
+.img-right {
+    margin: 10px 0;
+}
 
     .menu {
         display: none;
@@ -224,9 +240,16 @@ body {
 
 <!-- HERO -->
 <div class="hero" id="inicio">
-    <h1>GIOEVENTOS</h1>
-    <p>MÚSICA, SONIDO PROFESIONAL, AMBIENTE Y MÁS</p>
-    <img src="dj.jpeg" class="hero-img" alt="DJ">
+
+    <img src="dj.jpeg"class="img-left">
+
+    <div class="hero-text">
+        <h1>GIOEVENTOS</h1>
+        <p>MÚSICA, SONIDO PROFESIONAL, AMBIENTE Y MÁS</p>
+    </div>
+
+    <img src="deje.jpeg" class="img-right">
+
 </div>
 
 <!-- SOBRE -->
